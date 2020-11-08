@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FirstApp = ({ greetting, subtitle }) => {
+const FirstApp = ({ greeting, subtitle }) => {
 
 
     // const greeting = 'Hola mundo';
@@ -14,7 +14,7 @@ const FirstApp = ({ greetting, subtitle }) => {
     console.log();
     return (
         <>
-            <h1>{ greetting }</h1>
+            <h1>{ greeting }</h1>
             {/*<pre>{ JSON.stringify(user, null, 3) }</pre>*/}
             <p>{ subtitle }</p>
         </>
