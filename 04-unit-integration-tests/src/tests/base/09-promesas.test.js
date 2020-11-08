@@ -1,43 +1,27 @@
-import { getHeroeById } from './08-imp-exp'
+import heroes from "../../data/heroes";
+import {getHeroeByIdAsync} from "../../base/09-promesas";
 
-// const promesa = new Promise( (resolve, reject) => {
+describe('Test with promises', () => {
 
-//     setTimeout( () =>  {
-//         // Tarea
-//         // importen el 
-//         const p1 = getHeroeById(2);
-//         resolve( p1 );
-//         // reject( 'No se pudo encontrar el héroe' );
-//     }, 2000 )
+    test ('getHeroByIdAsync should return a hereo async', ( done ) => {
 
-// });
+        const id = 1;
+        getHeroeByIdAsync(id)
+            .then( heroe => {
+                expect( heroe ).toBe( heroes[0]);
+                done();
+            })
 
-// promesa.then( (heroe) => {
-//     console.log('heroe', heroe)
-// })
-// .catch( err => console.warn( err ) );
+    });
+    test ('getHeroByIdAsync should return error if hereo by id does not exist', ( done ) => {
 
-export const getHeroeByIdAsync = ( id ) => {
+        const id = 10;
+        getHeroeByIdAsync(id)
+            .catch( error  => {
+               expect(error).toBe('No se pudo encontrar el héroe');
+                done(); // It must be executed to said jest we are not awaiting for more results.
+            });
 
-    return new Promise( (resolve, reject) => {
-
-        setTimeout( () =>  {
-            // Tarea
-            // importen el 
-            const p1 = getHeroeById( id );
-            if ( p1 ) {
-                resolve( p1 );
-            } else {
-                reject( 'No se pudo encontrar el héroe' );
-            }
-        }, 1500 )
-    
     });
 
-
-}
-
-//
-// getHeroeByIdAsync(1)
-//     .then( console.log )
-//     .catch( console.warn );
+});

@@ -1,19 +1,15 @@
+import {retornaArreglo} from "../../base/07-deses-arr";
 
-const personajes = ['Goku','Vegeta','Trunks'];
-const [ , , p3 ] = personajes;
+describe('Destructuring Tests', () => {
+    test('It should return an string and a number', () => {
+        // const arr = retornaArreglo(); // ['ABC', 123]
+        // expect(arr).toEqual(['ABC', 123]);
 
+        const [letras, num] = retornaArreglo();
+        expect(letras).toBe('ABC');
+        expect(typeof letras).toBe('string');
 
-export const retornaArreglo = () =>{
-    return ['ABC', 123];
-}
-
-// const [ letras, numeros ] = retornaArreglo();
-
-// Tarea
-// 1. el primer valor del arr se llamará nombre
-// 2. se llamará setNombre
-const useState = ( valor ) => {
-    return [ valor, ()=>{ console.log('Hola Mundo') } ];
-}
-
-
+        expect(num).toBe(123);
+        expect(typeof num).toBe('number')
+    });
+});

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { getImagen } from './base/11-async-await';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+
           Learn React
         </a>
       </header>

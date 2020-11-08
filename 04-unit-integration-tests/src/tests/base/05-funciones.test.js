@@ -1,20 +1,26 @@
+import {getUser, getActiveUser} from "../../base/05-funciones";
 
-const saludar2 = ( nombre ) => {
-    return `Hola, ${ nombre }`;
-}
+describe('Tests in 05-funciones.js', () => {
+    test ('getUser should return an object', () => {
+        const userTest = {
+            uid: 'ABC123',
+            username: 'El_Papi1502'
+        }
 
-const saludar3 = ( nombre ) => `Hola, ${ nombre }`;
-const saludar4 = () => `Hola Mundo`;
+        const user = getUser();
 
-export const getUser = () => ({
-        uid: 'ABC123',
-        username: 'El_Papi1502'
+        expect(user).toEqual(userTest);
+    });
+    // getUsuarioActivo debe retornar un object
+
+    test ('getActiveUser should return an object', () => {
+        const userTest ={
+            uid: 'ABC567',
+            username: 'El_Papi1502'
+        }
+
+        const user = getActiveUser('El_Papi1502');
+
+        expect(user).toEqual(userTest);
+    });
 });
-
-// Tarea
-const getUsuarioActivo = ( nombre ) =>({
-    uid: 'ABC567',
-    username: nombre
-})
-
-
