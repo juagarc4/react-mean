@@ -11,6 +11,22 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-standard": "^4.1.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "prettier": "^2.1.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
