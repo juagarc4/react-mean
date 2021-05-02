@@ -23,3 +23,15 @@ exports[`Tests in AddCategory Should show the component correctly 1`] = `
   />
 </form>
 `;
+
+exports[`Tests in AddCategory Should submit form, call setCategories and clear the input box 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="Matrix"
+  />
+</form>
+`;

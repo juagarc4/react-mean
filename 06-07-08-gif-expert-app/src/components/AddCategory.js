@@ -6,7 +6,6 @@ export const AddCategory = ({ setCategories }) => {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value)
-    console.log('handleInputChange llamado')
   }
 
   const handleSubmit = (e) => {
@@ -14,7 +13,6 @@ export const AddCategory = ({ setCategories }) => {
     if (inputValue.trim().length > 0) {
       setCategories((cats) => [inputValue, ...cats])
       setInputValue('')
-      console.log('handleSubmit llamado')
     }
   }
 
