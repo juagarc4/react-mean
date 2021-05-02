@@ -10,6 +10,7 @@ describe('Tests in <GifGrid />', () => {
 
   test('Should show the component correctly', () => {
     useFetchGifs.mockReturnValue({ gifs: [], loading: true })
+
     const wrapper = shallow(<GifGrid category={category} />)
     expect(wrapper).toMatchSnapshot()
   })
@@ -26,7 +27,11 @@ describe('Tests in <GifGrid />', () => {
         title: 'Gif 2',
       },
     ]
-    useFetchGifs.mockReturnValue({ gifs: gifs, loading: false })
+    useFetchGifs.mockReturnValue({
+      gifs: gifs,
+      loading: false,
+    })
+
     const wrapper = shallow(<GifGrid category={category} />)
     expect(wrapper.find('p').exists()).toBe(false)
     expect(wrapper.find('GifGridItem').length).toBe(gifs.length)
