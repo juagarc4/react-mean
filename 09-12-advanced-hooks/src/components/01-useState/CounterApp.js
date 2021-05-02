@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import './counter.css'
+
 export const CounterApp = () => {
   const [state, setState] = useState({
     counter1: 10,
