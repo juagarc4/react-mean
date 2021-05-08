@@ -6,9 +6,16 @@ import ReactDOM from 'react-dom'
 // import { SimpleForm } from 'components/02-useEffect/SimpleForm'
 // import { FormWithCustomHook } from 'components/02-useEffect/FormWithCustomHook'
 // import { MultipleCustomHooks } from 'components/03-examples/MultipleCustomHooks'
-import { FocusScreen } from 'components/04-useRef/FocusScreen'
+// import { FocusScreen } from 'components/04-useRef/FocusScreen'
+import { RealExampleRef } from 'components/04-useRef/RealExampleRef'
+
+import 'styles.css'
 
 // ReactDOM.render(<HookApp />, document.getElementById('root'))
 // ReactDOM.render(<CounterApp />, document.getElementById('root'))
 // ReactDOM.render(<CounterWithCustomHook />, document.getElementById('root'))
-ReactDOM.render(<FocusScreen />, document.getElementById('root'))
+// ReactDOM.render(<SimpleForm />, document.getElementById('root'))
+// ReactDOM.render(<FormWithCustomHook />, document.getElementById('root'))
+// ReactDOM.render(<MultipleCustomHooks />, document.getElementById('root'))
+// ReactDOM.render(<FocusScreen />, document.getElementById('root'))
+ReactDOM.render(<RealExampleRef />, document.getElementById('root'))

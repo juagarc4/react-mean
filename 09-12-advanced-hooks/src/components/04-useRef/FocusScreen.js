@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import '../../styles.css'
 
 export const FocusScreen = () => {
   const inputRef = useRef()

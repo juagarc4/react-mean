@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Message } from './Message'
 
-import '../../styles.css'
 
 export const SimpleForm = () => {
   const [formState, setFormState] = useState({
