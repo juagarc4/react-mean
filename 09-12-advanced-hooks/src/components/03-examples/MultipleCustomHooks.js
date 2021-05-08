@@ -2,7 +2,7 @@ import React from 'react'
 import { useFetch } from 'hooks/useFetch'
 import { useCounter } from 'hooks/useCounter'
 
-import './effects.css'
+import '../../styles.css'
 
 export const MultipleCustomHooks = () => {
   const { counter, increment, decrement } = useCounter()

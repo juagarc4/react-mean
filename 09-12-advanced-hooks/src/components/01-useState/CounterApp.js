@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import './counter.css'
+import '../../styles.css'
 
 export const CounterApp = () => {
   const [state, setState] = useState({
