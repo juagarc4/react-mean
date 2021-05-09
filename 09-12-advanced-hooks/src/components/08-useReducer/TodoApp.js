@@ -5,13 +5,6 @@ import { useForm } from 'hooks/useForm'
 
 const init = () => {
   return JSON.parse(localStorage.getItem('todos')) || []
-  // return [
-  //   {
-  //     id: new Date().getTime(),
-  //     description: 'Learn React',
-  //     done: false,
-  //   },
-  // ]
 }
 export const TodoApp = () => {
   const [todos, dispatch] = useReducer(todoReducer, [], init)
