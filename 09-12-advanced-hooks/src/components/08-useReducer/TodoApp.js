@@ -12,11 +12,19 @@ export const TodoApp = () => {
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
+
   const [{ description }, handleInputChange, reset] = useForm({
     description: '',
   })
 
-  console.log(description)
+  const handleDelete = (todoId) => {
+    const action = {
+      type: 'remove',
+      payload: todoId,
+    }
+    dispatch(action)
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if (description.trim().length <= 1) {
@@ -49,7 +57,12 @@ export const TodoApp = () => {
                   <p className="text-center">
                     {i + 1}. {todo.description}
                   </p>
-                  <button className="btn btn-danger">Delete</button>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => handleDelete(todo.id)}
+                  >
+                    Delete
+                  </button>
                 </li>
               )
             })}
