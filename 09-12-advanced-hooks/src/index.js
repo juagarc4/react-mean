@@ -13,7 +13,8 @@ import ReactDOM from 'react-dom'
 // import { MemoHook } from 'components/06-Memos/MemoHook'
 // import { CallbackHook } from 'components/06-Memos/CallbackHook'
 // import { Parent } from 'components/07-task-memo/Parent'
-import { TodoApp } from 'components/08-useReducer/TodoApp'
+// import { TodoApp } from 'components/08-useReducer/TodoApp'
+import { MainApp } from 'components/09-useContext/MainApp'
 
 import 'styles.css'
 
@@ -30,4 +31,5 @@ import 'styles.css'
 // ReactDOM.render(<MemoHook />, document.getElementById('root'))
 // ReactDOM.render(<CallbackHook />, document.getElementById('root'))
 // ReactDOM.render(<Parent />, document.getElementById('root'))
-ReactDOM.render(<TodoApp />, document.getElementById('root'))
+// ReactDOM.render(<TodoApp />, document.getElementById('root'))
+ReactDOM.render(<MainApp />, document.getElementById('root'))
