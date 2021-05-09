@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom'
 // import { RealExampleRef } from 'components/04-useRef/RealExampleRef'
 // import { Layout } from 'components/05-useLayoutEffect/Layout'
 // import { Memorize } from 'components/06-Memos/Memorize'
-import { MemoHook } from 'components/06-Memos/MemoHook'
+// import { MemoHook } from 'components/06-Memos/MemoHook'
+import { CallbackHook } from 'components/06-Memos/CallbackHook'
 
 import 'styles.css'
 
@@ -24,4 +25,5 @@ import 'styles.css'
 // ReactDOM.render(<RealExampleRef />, document.getElementById('root'))
 // ReactDOM.render(<Layout />, document.getElementById('root'))
 // ReactDOM.render(<Memorize />, document.getElementById('root'))
-ReactDOM.render(<MemoHook />, document.getElementById('root'))
+// ReactDOM.render(<MemoHook />, document.getElementById('root'))
+ReactDOM.render(<CallbackHook />, document.getElementById('root'))
