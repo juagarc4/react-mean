@@ -29,7 +29,7 @@ export const FormAddTodo = ({ handleAddTodo }) => {
         <input
           type="text"
           name="description"
-          placeholeder="Aprender..."
+          placeholeder="Learn..."
           autoComplete="off"
           className="form-control"
           onChange={handleInputChange}
