@@ -1,19 +1,19 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { HomeScreen } from 'components/09-useContext/HomeScreen'
 import { UserContext } from 'components/09-useContext/UserContext'
+import { AppRouter } from 'components/09-useContext/AppRouter'
 
-describe('Tests in component <HomeScreen/>', () => {
+describe('Tests in component <AppRouter/>', () => {
   const user = {
+    id: 1,
     name: 'Raul',
-    email: 'test@email.com',
+    email: 'email@rgc.com',
   }
   const wrapper = mount(
     <UserContext.Provider value={{ user }}>
-      <HomeScreen />
+      <AppRouter />
     </UserContext.Provider>
   )
-
   test('Should show the component properly', () => {
     expect(wrapper).toMatchSnapshot()
   })

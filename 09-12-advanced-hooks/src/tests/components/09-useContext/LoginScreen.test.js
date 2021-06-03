@@ -1,9 +1,9 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { mount } from 'enzyme'
 import { UserContext } from 'components/09-useContext/UserContext'
 import { LoginScreen } from 'components/09-useContext/LoginScreen'
 
-describe('Tests in component <HomeScreen/>', () => {
+describe('Tests in component <LoginScreen/>', () => {
   const user = {
     id: 1,
     name: 'Raul',
