@@ -1,12 +1,12 @@
 export const testTodos = [
   {
     id: 1,
-    desc: 'Learn React',
+    description: 'Learn React',
     done: false,
   },
   {
     id: 2,
-    desc: 'Learn NextJS',
+    description: 'Learn NextJS',
     done: false,
   },
 ]
