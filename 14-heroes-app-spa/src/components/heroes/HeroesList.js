@@ -6,7 +6,7 @@ import { HeroCard } from './HeroCard'
 export const HeroesList = ({ publisher }) => {
   const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher])
   return (
-    <div className='row' data-masonry='{"percentPosition": true }'>
+    <div className='row animate__animated animate__fadeIn' data-masonry='{"percentPosition": true }'>
       {heroes.map((hero) => {
         return (
           <div key={hero.id} className='col-sm-6 col-lg-4 mb-4'>
