@@ -9,8 +9,8 @@ export const HeroesList = ({ publisher }) => {
     <div className='row' data-masonry='{"percentPosition": true }'>
       {heroes.map((hero) => {
         return (
-          <div className='col-sm-6 col-lg-4 mb-4'>
-            <HeroCard {...hero} key={hero.id} />
+          <div key={hero.id} className='col-sm-6 col-lg-4 mb-4'>
+            <HeroCard {...hero} />
           </div>
         )
       })}
