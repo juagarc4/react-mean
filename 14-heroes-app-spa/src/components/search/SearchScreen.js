@@ -1,16 +1,21 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
+import queryString from 'query-string'
 
 import { heroes } from '../../data/heroes'
 import { useForm } from '../../hooks/useForm'
 import { HeroCard } from '../heroes/HeroCard'
 
-export const SearchScreen = () => {
+export const SearchScreen = ({ history }) => {
+  const location = useLocation()
+  const { q = '' } = queryString.parse(location.search)
+  const [formValues, handleInputChange] = useForm({ searchText: q })
+
   const heroesFiltered = heroes
-  const [formValues, handleInputChange] = useForm({ searchText: '' })
   const { searchText } = formValues
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formValues)
+    history.push(`?q=${searchText}`)
   }
   return (
     <div className='row'>
@@ -27,8 +32,8 @@ export const SearchScreen = () => {
             type='text'
             value={searchText}
           />
-          <div class='d-grid gap-2'>
-            <button type='submit' className='btn m-1 btn-block btn-outline-primary'>
+          <div className='d-grid gap-2'>
+            <button type='submit' className='btn mt-2 btn-block btn-outline-primary'>
               Search
             </button>
           </div>
