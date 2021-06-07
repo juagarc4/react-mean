@@ -12,6 +12,7 @@ export function HeroesApp() {
   useEffect(() => {
     localStorage.setItem('user', JSON.stringify(user))
   }, [user])
+
   return (
     <AuthContext.Provider value={{ user, dispatch }}>
       <AppRouter />

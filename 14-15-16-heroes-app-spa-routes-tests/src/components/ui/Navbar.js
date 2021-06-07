@@ -6,7 +6,7 @@ export const Navbar = () => {
   const {
     user: { name },
   } = useContext(AuthContext)
-  console.log(name)
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
