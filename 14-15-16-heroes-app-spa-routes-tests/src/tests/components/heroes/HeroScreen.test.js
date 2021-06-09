@@ -16,6 +16,7 @@ describe('Tests in <HeroScreen/>', () => {
   test('Should show the component <Redirect/> if no hero is present', () => {
     expect(wrapper.find('Redirect').exists()).toBe(true)
   })
+
   test('Should show a hero if the parameter exists and was found ', () => {
     const wrapper = mount(
       <MemoryRouter initialEntries={['/hero/marvel-spider']}>
@@ -56,5 +57,16 @@ describe('Tests in <HeroScreen/>', () => {
     wrapper.find('button').simulate('click')
     expect(historyMock.push).toHaveBeenCalledTimes(0)
     expect(historyMock.goBack).toHaveBeenCalledTimes(1)
+  })
+  test('Should call <redirect /> if argument was not found', () => {
+    const wrapper = mount(
+      <MemoryRouter initialEntries={['/hero/marvel-spider1234']}>
+        <Route
+          path="/hero/:heroId"
+          component={() => <HeroScreen history={historyMock} />}
+        />
+      </MemoryRouter>
+    )
+    expect(wrapper.text()).toBe('')
   })
 })
