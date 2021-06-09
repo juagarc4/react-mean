@@ -69,7 +69,7 @@ Array [
             Raul
           </span>
           <button
-            className="nav-item nav-link btn"
+            className="nav-item nav-link btn btn-login"
             onClick={[Function]}
           >
             Logout

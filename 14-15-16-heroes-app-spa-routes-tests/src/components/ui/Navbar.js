@@ -62,7 +62,10 @@ export const Navbar = () => {
             </NavLink>
             <hr />
             <span className="nav-item nav-link text-info">{name}</span>
-            <button className="nav-item nav-link btn" onClick={handleLogout}>
+            <button
+              className="nav-item nav-link btn btn-login"
+              onClick={handleLogout}
+            >
               Logout
             </button>
           </div>
