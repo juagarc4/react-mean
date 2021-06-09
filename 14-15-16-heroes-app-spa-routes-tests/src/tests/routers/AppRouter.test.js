@@ -3,12 +3,12 @@ import { mount } from 'enzyme'
 import { AppRouter } from 'routers/AppRouter'
 
 describe('Tests ins <AppRouter/>', () => {
-  test('Should show login if not authenticate', () => {
-    const contextValue = {
-      dispatch: jest.fn(),
-      user: { logged: false },
-    }
+  const contextValue = {
+    dispatch: jest.fn(),
+    user: { logged: false },
+  }
 
+  test('Should show login if not authenticate', () => {
     const wrapper = mount(
       <AuthContext.Provider value={contextValue}>
         <AppRouter />
