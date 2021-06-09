@@ -54,7 +54,7 @@ describe('Tests in <HeroScreen/>', () => {
       </MemoryRouter>
     )
     wrapper.find('button').simulate('click')
-    expect(historyMock.push).not.toHaveBeenCalledWith('/')
+    expect(historyMock.push).toHaveBeenCalledTimes(0)
     expect(historyMock.goBack).toHaveBeenCalledTimes(1)
   })
 })
