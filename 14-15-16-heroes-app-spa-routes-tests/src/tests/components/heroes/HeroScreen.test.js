@@ -1,6 +1,6 @@
-import { HeroScreen } from 'components/heroes/HeroScreen'
 import { mount } from 'enzyme'
 import { MemoryRouter, Route } from 'react-router-dom'
+import { HeroScreen } from 'components/heroes/HeroScreen'
 
 describe('Tests in <HeroScreen/>', () => {
   const historyMock = {

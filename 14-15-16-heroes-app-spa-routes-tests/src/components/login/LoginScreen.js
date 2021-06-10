@@ -4,8 +4,10 @@ import { types } from 'types/types'
 
 export const LoginScreen = ({ history }) => {
   const { dispatch } = useContext(AuthContext)
-  const lastVisited = localStorage.getItem('lastVisited') || '/'
+
   const handleLogin = () => {
+    const lastVisited = localStorage.getItem('lastVisited') || '/'
+
     dispatch({
       type: types.login,
       payload: {
