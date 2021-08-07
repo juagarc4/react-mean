@@ -106,7 +106,6 @@ Array [
                 <img
                   alt="Spider Man"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-spider.jpg"
                 />
               </div>
               <div
@@ -160,7 +159,6 @@ Array [
                 <img
                   alt="Captain America"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-captain.jpg"
                 />
               </div>
               <div
@@ -214,7 +212,6 @@ Array [
                 <img
                   alt="Iron Man"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-iron.jpg"
                 />
               </div>
               <div
@@ -268,7 +265,6 @@ Array [
                 <img
                   alt="Thor"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-thor.jpg"
                 />
               </div>
               <div
@@ -322,7 +318,6 @@ Array [
                 <img
                   alt="Hulk"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-hulk.jpg"
                 />
               </div>
               <div
@@ -376,7 +371,6 @@ Array [
                 <img
                   alt="Wolverine"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-wolverine.jpg"
                 />
               </div>
               <div
@@ -430,7 +424,6 @@ Array [
                 <img
                   alt="Daredevil"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-daredevil.jpg"
                 />
               </div>
               <div
@@ -484,7 +477,6 @@ Array [
                 <img
                   alt="Hawkeye"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-hawkeye.jpg"
                 />
               </div>
               <div
@@ -538,7 +530,6 @@ Array [
                 <img
                   alt="Cyclops"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-cyclops.jpg"
                 />
               </div>
               <div
@@ -592,7 +583,6 @@ Array [
                 <img
                   alt="Silver Surfer"
                   className="card-img rounded-0"
-                  src="./assets/heroes/marvel-silver.jpg"
                 />
               </div>
               <div

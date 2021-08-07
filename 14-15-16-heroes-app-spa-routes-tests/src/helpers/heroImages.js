@@ -1,1 +1,3 @@
-export const heroImages = require.context('../assets/heroes', true)
+import requireContext from 'require-context.macro'
+
+export const heroImages = requireContext('../assets/heroes', true)

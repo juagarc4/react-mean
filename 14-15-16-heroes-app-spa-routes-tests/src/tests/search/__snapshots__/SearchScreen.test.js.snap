@@ -110,7 +110,6 @@ exports[`Tests in <SearchScreen/> Should show Batman and the input with the valu
           <img
             alt="Batman"
             className="card-img rounded-0"
-            src="./assets/heroes/dc-batman.jpg"
           />
         </div>
         <div
