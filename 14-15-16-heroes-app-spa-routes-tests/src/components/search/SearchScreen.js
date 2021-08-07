@@ -19,35 +19,38 @@ export const SearchScreen = ({ history }) => {
     history.push(`?q=${searchText}`)
   }
   return (
-    <div className='row'>
-      <div className='col-md-5'>
+    <div className="row">
+      <div className="col-md-5">
         <h4>Search Screen</h4>
         <hr />
         <form onSubmit={handleSubmit}>
           <input
-            autoComplete='off'
-            className='form-control'
-            name='searchText'
+            autoComplete="off"
+            className="form-control"
+            name="searchText"
             onChange={handleInputChange}
-            placeholder='Find a hero'
-            type='text'
+            placeholder="Find a hero"
+            type="text"
             value={searchText}
           />
-          <div className='d-grid gap-2'>
-            <button type='submit' className='btn mt-2 btn-block btn-outline-primary'>
+          <div className="d-grid gap-2">
+            <button
+              type="submit"
+              className="btn mt-2 btn-block btn-outline-primary"
+            >
               Search
             </button>
           </div>
         </form>
       </div>
-      <div className='col-md-7'>
+      <div className="col-md-7">
         <h4>Results</h4>
         <hr />
 
-        {q === '' && <div className='alert alert-info'>Search a hero</div>}
+        {q === '' && <div className="alert alert-info">Search a hero</div>}
         {q !== '' && heroesFiltered.length === 0 && (
-          <div className='alert alert-warning'>
-            Ther is no hero with the searched name <strong>"{q}"</strong>
+          <div className="alert alert-warning">
+            There is no hero with the searched name <strong>"{q}"</strong>
           </div>
         )}
 
