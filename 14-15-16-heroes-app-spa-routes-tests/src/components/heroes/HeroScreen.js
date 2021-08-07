@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import { Redirect, useParams } from 'react-router-dom'
 import { getHeroesById } from 'selectors/getHeroById'
+import { heroImages } from 'helpers/heroImages'
 
 export const HeroScreen = ({ history }) => {
   const { heroId } = useParams()
@@ -18,13 +19,12 @@ export const HeroScreen = ({ history }) => {
     }
   }
   const { superhero, publisher, alter_ego, first_appearance, characters } = hero
-
   return (
     <div className="row mt-5">
       <div className="col-md-4 animate__animated animate__fadeInLeft">
         <img
           className="img-thumbnail"
-          src={`../assets/heroes/${heroId}.jpg`}
+          src={heroImages(`./${heroId}.jpg`).default}
           alt={superhero}
         />
       </div>
